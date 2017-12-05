@@ -7,7 +7,9 @@ int main(){
     int x, aux, sumcif;
     cout<<"Numerele cu proprietatea ceruta sunt: "<<endl;
     for(x=100;x<=999;x++){
-        aux=x;
+        aux=x; //e buna ideea ca vrei sa salvezi valoarea lui x, dar ai o eroare in logica;
+                //verifica ce valoare are x-ul la inceput de for, verifica ce valoare are la final de for
+                //si dupa verifica VIRGULA conditia din for. That's where your problem is.
         uc=x%10;
         x=x/10; //din moment ce x este int, operatorul div ('/') noul x va fi tot nr. intreg.
                 //div returneaza CATUL impartirii ex: int a = 3 / 2; (a=1) VS. float a = 3 / 2; (a=1.5)
